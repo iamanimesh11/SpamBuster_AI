@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 from PIL import  Image
 
 from collections import Counter
-st.set_page_config(page_title="spam Buster AI", layout="wide", initial_sidebar_state="expanded")
+st.set_page_config(page_title="spam Buster AI", layout="wide", initial_sidebar_state="expanded",page_icon="💬")
 
 hide_github_icon_js = """
     <style>
