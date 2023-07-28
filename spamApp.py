@@ -13,6 +13,29 @@ import matplotlib.pyplot as plt
 from PIL import  Image
 
 from collections import Counter
+st.set_page_config(page_title="spam Buster AI", layout="wide", initial_sidebar_state="expanded")
+
+hide_github_icon_js = """
+    <style>
+    #MainMenu {
+        display: none;
+    }
+    button.css-ch5dnh {
+        display: none;
+    }
+    </style>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const toolbar = document.querySelector('[data-testid="stToolbar"]');
+        if (toolbar) {
+            toolbar.style.display = 'none';
+        }
+    });
+    </script>
+    """
+st.markdown(hide_github_icon_js, unsafe_allow_html=True)
+
+
 
 ps = PorterStemmer()
 nltk.download('punkt')
